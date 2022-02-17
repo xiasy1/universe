@@ -1,0 +1,24 @@
+div.about-module-container {
+    background     : #0000001a;
+    padding-bottom : 100px;
+    padding-top    : 100px;
+}
+
+div.about-module-main-about {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+div.about-module-main-story {
+    padding-right : 50px;
+    width         : 50%;
+}
+
+img.about-module-spesh {
+    width         : 300px;
+    height        : 300px;
+    border        : 2px solid #ffffff80;
+    border-radius : 15px;
+    box-shadow    : 0 0 50px hsl(0deg 0% 100% / 10%);
+}
