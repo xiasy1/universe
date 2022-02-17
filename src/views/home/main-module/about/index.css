@@ -15,6 +15,22 @@ div.about-module-main-story {
     width         : 50%;
 }
 
+p.about-module-header {
+    color          : var(--white-text-color);
+    font-family    : var(--h2-font-family);
+    font-size      : var(--h2-font-size);
+    letter-spacing : var(--h2-letter-spacing);
+    line-height    : var(--h2-line-height);
+}
+
+p.about-module--main-about-subtext {
+    font-family : var(--body-font-family);
+    font-size   : var(--body-font-size);
+    line-height : var(--body-line-height);
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+}
+
 img.about-module-spesh {
     width         : 300px;
     height        : 300px;
