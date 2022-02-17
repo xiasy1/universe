@@ -1,0 +1,14 @@
+@font-face {
+    font-family : "vrc";
+    src         : url("./VCR.ttf") format("truetype");
+}
+
+@font-face {
+    font-family : "Pixellari";
+    src         : url("./Pixellari.ttf") format("truetype");
+}
+
+@font-face {
+    font-family : "urspecial";
+    src         : url("./URspecial.ttc") format("truetype");
+}

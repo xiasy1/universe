@@ -1,0 +1,25 @@
+div.navbar-nav {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    height          : 100px;
+    color           : #fff;
+    font-family     : vrc;
+    background      : #60396d;
+}
+
+div.navbar-logo {
+    padding-left : 4em;
+}
+
+div.navbar-nav-items {
+    padding-right : 4em;
+}
+
+div.navbar-nav-items > a{
+    margin-right: 25px;
+}
+
+div.navbar-nav-items > a:hover{
+    color: #f9adfb;
+}

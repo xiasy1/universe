@@ -1,0 +1,28 @@
+@import "assets/font/index.css";
+@import "assets/style/root.css";
+
+body {
+    margin                  : 0;
+    font-family             : vrc;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+    color                   : #ffffff;
+    background              : #60396d;
+}
+
+code {
+    font-family : source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+    color           : inherit;
+    text-decoration : none;
+}
+
+button {
+    font-family : inherit;
+    font-size   : inherit;
+    line-height : inherit;
+    margin      : 0;
+}
