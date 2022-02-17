@@ -4,6 +4,15 @@ div.roadmap-module-container {
     position       : relative;
 }
 
+img.roadmap-module-roadmap-back {
+    box-shadow  : 0 0 80px 50px hsl(0deg 0% 100% / 20%);
+    left        : 0;
+    margin-left : 29%;
+    margin-top  : 4%;
+    transition  : 1s;
+    width       : 42%;
+}
+
 img.roadmap-module-roadmap {
     left        : 0;
     margin-left : 25%;
