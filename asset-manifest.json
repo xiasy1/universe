@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.4d1fe7fc.css",
+    "main.js": "./static/js/main.eadc0b60.js",
+    "static/js/787.598d7851.chunk.js": "./static/js/787.598d7851.chunk.js",
+    "static/media/wallstreet1.gif": "./static/media/wallstreet1.29a42709f7e84d99f257.gif",
+    "static/media/roadmap.png": "./static/media/roadmap.a866146e26b63484ca36.png",
+    "static/media/donutgif.gif": "./static/media/donutgif.6f7af61cb27f73e48d5d.gif",
+    "static/media/sky.png": "./static/media/sky.18ecd1f9469f64c39a0e.png",
+    "static/media/dinoworld1.gif": "./static/media/dinoworld1.35a86ae7a21b25f43d28.gif",
+    "static/media/animated_ green.png": "./static/media/animated_ green.3f1adb4c2e2fe84d3492.png",
+    "static/media/rocket.png": "./static/media/rocket.bb06c15ab35b5af33fac.png",
+    "static/media/unicornspesh.png": "./static/media/unicornspesh.ed5647536753cf421d9d.png",
+    "static/media/sweaterspesh.png": "./static/media/sweaterspesh.20f2c9c08517656965c1.png",
+    "static/media/VCR.ttf": "./static/media/VCR.10cf96d54dcd9af0486c.ttf",
+    "static/media/islandspesh.png": "./static/media/islandspesh.c1a59b06fe3287637a21.png",
+    "static/media/roadmap2.png": "./static/media/roadmap2.467230206fc3b935a00a.png",
+    "static/media/URspecial.ttc": "./static/media/URspecial.475e3220c03adfd0ad87.ttc",
+    "static/media/Pixellari.ttf": "./static/media/Pixellari.319bd0eb3ce3da4ab5b1.ttf",
+    "index.html": "./index.html",
+    "main.4d1fe7fc.css.map": "./static/css/main.4d1fe7fc.css.map",
+    "main.eadc0b60.js.map": "./static/js/main.eadc0b60.js.map",
+    "787.598d7851.chunk.js.map": "./static/js/787.598d7851.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d1fe7fc.css",
+    "static/js/main.eadc0b60.js"
+  ]
+}
