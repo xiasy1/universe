@@ -26,3 +26,7 @@ button {
     line-height : inherit;
     margin      : 0;
 }
+
+hr{
+    background-color: currentColor;
+}
