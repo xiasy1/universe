@@ -1,0 +1,17 @@
+div.discord-module {
+    position : relative;
+}
+
+div.discord-module img {
+    width : 100%;
+}
+
+section.discord-text {
+    position    : absolute;
+    top         : 40%;
+    width       : 30%;
+    left        : 50%;
+    font-size   : 0.32rem;
+    font-family : MengDong;
+    transform   : translateX(-50%);
+}

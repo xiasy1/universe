@@ -12,3 +12,8 @@
     font-family : "urspecial";
     src         : url("./URspecial.ttc") format("truetype");
 }
+
+@font-face {
+    font-family : "MengDong";
+    src         : url("./MengDong.ttf") format("truetype");
+}

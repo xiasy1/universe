@@ -1,25 +1,30 @@
 div.navbar-nav {
-    display         : flex;
-    justify-content : space-between;
-    align-items     : center;
-    height          : 100px;
-    color           : #fff;
-    font-family     : vcr;
-    background      : #60396d;
-}
-
-div.navbar-logo {
-    padding-left : 4em;
+    height      : 3rem;
+    color       : rgba(0, 0, 0, 0.7);
+    font-family : vcr;
+    position    : relative;
+    overflow    : hidden;
 }
 
 div.navbar-nav-items {
-    padding-right : 4em;
+    height        : 37px;
+    position      : absolute;
+    top           : 1rem;
+    left          : 50%;
+    transform     : translateX(-50%);
+    background    : #ffffff;
+    display       : flex;
+    align-items   : center;
+    border-radius : 4px;
 }
 
-div.navbar-nav-items > a{
-    margin-right: 25px;
+div.navbar-nav-items > span {
+    font-family: vcr;
+    font-weight : bolder;
+    padding     : 0 0.1rem;
+    cursor      : pointer;
 }
 
-div.navbar-nav-items > a:hover{
-    color: #f9adfb;
+div.navbar-nav-items > span:hover {
+    color : #000000;
 }

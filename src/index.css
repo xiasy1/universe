@@ -4,10 +4,11 @@
 body {
     margin                  : 0;
     font-family             : vcr;
+    font-size               : 0.18rem;
     -webkit-font-smoothing  : antialiased;
     -moz-osx-font-smoothing : grayscale;
     color                   : #ffffff;
-    background              : #60396d;
+    background              : #000000;
 }
 
 code {
@@ -27,6 +28,6 @@ button {
     margin      : 0;
 }
 
-hr{
-    background-color: currentColor;
+hr {
+    background-color : currentColor;
 }
