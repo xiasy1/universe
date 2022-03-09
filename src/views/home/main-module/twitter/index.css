@@ -1,11 +1,13 @@
-div#twitter {
+div#twitter-module {
     position : relative;
+    height   : 15rem;
 }
 
 div.text-container {
     width     : 68%;
     position  : absolute;
     left      : 50%;
+    top       : -20%;
     transform : translateX(-50%);
 }
 

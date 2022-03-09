@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="navbar-nav-items">
                 <span onClick={() => scrollToAnchor("discord")}>DISCORD</span>
                 <span onClick={() => scrollToAnchor("twitter-module")}>TWITTER</span>
-                <span onClick={() => scrollToAnchor("discord")}>PENSEA</span>
+                <span onClick={() => scrollToAnchor("opensea-module")}>OPENSEA</span>
                 <span onClick={() => scrollToAnchor("discord")}>LOOKSRARE</span>
                 <span onClick={() => scrollToAnchor("discord")}>MEDIUM</span>
             </div>

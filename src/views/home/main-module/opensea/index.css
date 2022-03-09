@@ -1,0 +1,43 @@
+div#opensea-module {
+    position : relative;
+    height   : 10rem;
+}
+
+div#opensea-module img.title-icon1 {
+    top       : -1rem;
+    left      : -1.4rem;
+    transform : rotate(-30deg);
+}
+
+div#opensea-module img.title-icon2 {
+    top   : -1.6rem;
+    right : -1.3rem;
+}
+
+div#opensea-module img.content-icon1 {
+    left : -1.3rem;
+    top  : -1.4rem;
+}
+
+div#opensea-module img.content-icon2 {
+    left   : -2.2rem;
+    bottom : -1.6rem;
+}
+
+div#opensea-module img.content-icon3 {
+    width     : 4rem;
+    height    : auto;
+    position  : absolute;
+    left      : -2.75rem;
+    bottom    : -1rem;
+    transform : rotate(-25deg);
+}
+
+div#opensea-module img.content-icon4 {
+    width     : 4rem;
+    height    : auto;
+    position  : absolute;
+    right     : -0.8rem;
+    bottom    : -1.4rem;
+    transform : rotate(20deg);
+}

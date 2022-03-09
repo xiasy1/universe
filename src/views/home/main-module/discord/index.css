@@ -7,11 +7,13 @@ div.discord-module img {
 }
 
 section.discord-text {
-    position    : absolute;
-    top         : 40%;
-    width       : 30%;
-    left        : 50%;
-    font-size   : 0.32rem;
-    font-family : MengDong;
-    transform   : translateX(-50%);
+    position       : absolute;
+    top            : 38%;
+    width          : 30%;
+    left           : 50%;
+    font-size      : 0.32rem;
+    font-family    : MengDong;
+    transform      : translateX(-50%);
+    letter-spacing : 1px;
+    line-height    : 0.38rem;
 }
