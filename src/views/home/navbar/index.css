@@ -1,25 +1,29 @@
 div.navbar-nav {
-    height      : 3rem;
-    color       : rgba(0, 0, 0, 0.7);
-    font-family : vcr;
-    position    : relative;
-    overflow    : hidden;
+    color           : rgba(0, 0, 0, 0.7);
+    font-family     : vcr;
+    padding-top     : 1rem;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+}
+
+div.navbar-nav > img.logo {
+    width  : 9rem;
+    height : auto;
 }
 
 div.navbar-nav-items {
-    height        : 37px;
-    position      : absolute;
-    top           : 1rem;
-    left          : 50%;
-    transform     : translateX(-50%);
+    width         : 4.8rem;
+    height        : .5rem;
+    line-height   : .5rem;
+    padding       : 0 .4rem;
     background    : #ffffff;
-    display       : flex;
-    align-items   : center;
     border-radius : 4px;
 }
 
 div.navbar-nav-items > span {
-    font-family: vcr;
+    font-family : vcr;
     font-weight : bolder;
     padding     : 0 0.1rem;
     cursor      : pointer;

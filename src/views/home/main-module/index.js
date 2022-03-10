@@ -6,8 +6,8 @@ export default function MainModule() {
     return (
         <main>
             <Discord />
-            <Twitter />
-            <Opensea />
+            {/*<Twitter />*/}
+            {/*<Opensea />*/}
         </main>
     )
 }
