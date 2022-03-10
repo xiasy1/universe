@@ -13,11 +13,11 @@ div.discord-module img {
 
 section.discord-text {
     position    : absolute;
-    top         : 30%;
-    width       : 30%;
+    top         : 28%;
+    width       : 35%;
     left        : 50%;
-    font-size   : 0.32rem;
-    font-family : MengDong;
+    font-size   : 0.3rem;
+    font-family : SounsoRare;
     transform   : translateX(-50%);
     line-height : 0.3rem;
 }
