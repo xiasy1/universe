@@ -1,6 +1,6 @@
 import "./index.css";
-import getAWSCDN           from "../../../assets/utils/getAWSCDN";
-import {useEffect, useRef} from "react";
+import getAWSCDN                     from "../../../assets/utils/getAWSCDN";
+import {useEffect, useRef, useState} from "react";
 
 export default function Navbar() {
     const scrollToAnchor = (anchorName) => {
@@ -17,19 +17,27 @@ export default function Navbar() {
     for (let i = 0; i < 10; i++) {
         logo_CDNs.push(getAWSCDN('logos', `logo${i + 1}`, 'webp'));
     }
-    const logo = useRef(null);
+    // const logo = useRef(null);
+    // useEffect(() => {
+    //     const logoElement = logo.current
+    //     if (logo.current) {
+    //         for (let i = 0; i < logo_CDNs.length; i++) {
+    //             logoElement.dataset[`cdn${i + 1}`] = logo_CDNs[i];
+    //         }
+    //     }
+    //     setInterval(() => {
+    //         logoElement.src = logoElement.dataset[`cdn${Math.floor(Math.random() * 10 + 1)}`]
+    //     }, 500)
+    // })
+    const [activeImageNum, setActiveImageNum] = useState(0);
     useEffect(() => {
-        const logoElement = logo.current
-        if (logo.current) {
-            for (let i = 0; i < logo_CDNs.length; i++) {
-                logoElement.dataset[`cdn${i + 1}`] = logo_CDNs[i];
-            }
-        }
+        let i = 0;
         setInterval(() => {
-            logoElement.src = logoElement.dataset[`cdn${Math.floor(Math.random() * 10 + 1)}`]
-        }, 1000)
-    })
-
+            if (i > 9) i = 0;
+            setActiveImageNum(i);
+            i++
+        }, 300);
+    }, [])
     return (
         <div className="navbar-nav">
             <div className="navbar-nav-items">
@@ -39,7 +47,15 @@ export default function Navbar() {
                 <span onClick={() => scrollToAnchor("looks-rare")}>LOOKSRARE</span>
                 <span onClick={() => scrollToAnchor("medium-module")}>MEDIUM</span>
             </div>
-            <img ref={logo} className="logo" src={logo_CDNs[0]} alt="" data-cdn={logo_CDNs[1]} />
+            {
+                logo_CDNs.map((item, index) => {
+                    return (
+                        <img className={`logo ${activeImageNum === index ? 'active' : ''}`}
+                             src={item} alt="" />
+                    )
+                })
+            }
+
         </div>
     )
 }
