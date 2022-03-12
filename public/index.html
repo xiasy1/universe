@@ -41,11 +41,13 @@
     -->
   </body>
   <script type="text/javascript">
-    (function(){
+    function computedRootFontSize(){
       const styleNode = document.createElement("style");
       const w = document.documentElement.clientWidth/16;
       styleNode.innerHTML = "html{font-size:"+w+"px!important}";
       document.head.appendChild(styleNode);
-    })();
+    }
+    computedRootFontSize();
+    window.addEventListener("resize",computedRootFontSize);
   </script>
 </html>

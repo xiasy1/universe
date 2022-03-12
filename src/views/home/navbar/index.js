@@ -1,5 +1,6 @@
 import "./index.css";
 import getAWSCDN             from "../../../assets/utils/getAWSCDN";
+import getUniqueKey          from "../../../assets/utils/getUniqueKey";
 import {useEffect, useState} from "react";
 
 export default function Navbar() {
@@ -40,7 +41,7 @@ export default function Navbar() {
                 logo_CDNs.map((item, index) => {
                     return (
                         <img className={`logo ${activeImageNum === index ? 'active' : ''}`}
-                             src={item} alt="" />
+                             key={getUniqueKey()} src={item} alt="" />
                     )
                 })
             }
