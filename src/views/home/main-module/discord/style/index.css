@@ -64,9 +64,9 @@ div.discord-module img.discord-cat {
     height    : auto;
 }
 
-/*div.discord-module div.discord-icons img {*/
-/*    width : 100%;*/
-/*}*/
+div.discord-module div.discord-icons img {
+    height : 100%;
+}
 
 .ellipse {
     position : absolute;
