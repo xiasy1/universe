@@ -1,35 +1,11 @@
 import "./style/index.css";
 import getAWSCDN    from "../../../../assets/utils/getAWSCDN.js";
 import useAnimation from "./animation";
-import imageNames   from "./imageNames";
-import {
-    useCallback,
-    useEffect,
-    useRef,
-    useState
-}                   from "react";
-
-const icons = imageNames.map(item => getAWSCDN("discord-icons", item));
+import {useRef}     from "react";
 
 export default function Discord() {
-    let [imgNodes, setImgNodes] = useState([]);
-    let centerNodes = useRef(null);
-    let [centerPos, setCenterPos] = useState({x: 0, y: 0});
-    let nodes = []
-    const measuredRef = useCallback(node => {
-        nodes.push(node)
-        if (node !== null) {
-            setImgNodes(nodes);
-        }
-    }, []);
-
-    useEffect(() => {
-        setCenterPos({
-            x: centerNodes.current.offsetLeft,
-            y: centerNodes.current.offsetTop
-        })
-    }, []);
-    useAnimation(imgNodes, centerPos);
+    let discordIconsNodes = useRef(null);
+    // useAnimation(discordIconsNodes);
     return (
         <div id="discord" className="discord-module">
             <img className="discord-background01" src={getAWSCDN("discord-icons", 'background01', 'webp')} alt="" />
@@ -43,18 +19,31 @@ export default function Discord() {
                 can even mutate into monsters... Each of them is unique and has their own story. Would you like to adopt
                 one? Come try your luck!
             </section>
-            <div className="center-position" ref={centerNodes}> </div>
-            <div className="discord-icons">
+            <div className="ellipse">
+                <svg viewBox="0 0 200 50">
+                    <path d="M 0,63.5 a 120,67 0 1,1 0,1 z" id="circle" />
+                    <text x="48" style={{'fill': '#fff'}}>
+                        <textPath xlinkHref="#circle" fontSize={3.1} fontFamily={'Mengdong'}>
+                            Cats save the world! Cats drive all the unhappy things away!
+                            Fuck the world! I only love my cat!
+                            Catddle embraces everything! Everything loves cats!
+                            Happiness is a cat!
+                        </textPath>
+                    </text>
+                    <text x="348" style={{'fill': '#fff'}}>
+                        <textPath xlinkHref="#circle" fontSize={3.1} fontFamily={'Mengdong'}>
+                            Cats save the world! Cats drive all the unhappy things away!
+                            Fuck the world! I only love my cat!
+                            Catddle embraces everything! Everything loves cats!
+                            Happiness is a cat!
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <div className="discord-icons" ref={discordIconsNodes}>
                 <img src={getAWSCDN("discord-icons", "background-icons", "webp")} alt="" />
                 <img src={getAWSCDN("discord-icons", "background-icons", "webp")} alt="" />
                 <img src={getAWSCDN("discord-icons", "background-icons", "webp")} alt="" />
-                {/*<div className="left-icons">*/}
-                {/*    {*/}
-                {/*        imageNames.map((item, i) => <img key={i} ref={measuredRef}*/}
-                {/*                                         className={`img${i}`}*/}
-                {/*                                         src={icons[i]} alt="" />)*/}
-                {/*    }*/}
-                {/*</div>*/}
             </div>
         </div>
     )
