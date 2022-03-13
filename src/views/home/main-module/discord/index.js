@@ -6,9 +6,9 @@ export default function Discord() {
     let discordIconsNodes = useRef(null);
     return (
         <div id="discord" className="discord-module">
-            <img className="discord-background01" src={getAWSCDN("discord-icons", 'background01', 'webp')} alt="" />
-            <img className="discord-background02" src={getAWSCDN("discord-icons", 'background02', 'webp')} alt="" />
-            <img className="discord-cat" src={getAWSCDN("discord-icons", "cat", "webp")} alt="" />
+            <img className="discord-background01" src={getAWSCDN("discord-icons", 'background01', 'jpg')} alt="" />
+            <img className="discord-background02" src={getAWSCDN("discord-icons", 'background02', 'png')} alt="" />
+            <img className="discord-cat" src={getAWSCDN("discord-icons", "cat", "png")} alt="" />
             <section className="discord-text">
                 Me-WOW! Didn't expect the world of the Catddle-verse to be discovered by you! Unusual cats are hidden
                 here. These lovely cats cuddle what they love and often hide in their litter boxes. <br />
@@ -39,9 +39,9 @@ export default function Discord() {
                 </svg>
             </div>
             <div className="discord-icons" ref={discordIconsNodes}>
-                <img src={getAWSCDN("discord-icons", "background-icons", "webp")} alt="" />
-                <img src={getAWSCDN("discord-icons", "background-icons", "webp")} alt="" />
-                <img src={getAWSCDN("discord-icons", "background-icons", "webp")} alt="" />
+                <img src={getAWSCDN("discord-icons", "background-icons", "png")} alt="" />
+                <img src={getAWSCDN("discord-icons", "background-icons", "png")} alt="" />
+                <img src={getAWSCDN("discord-icons", "background-icons", "png")} alt="" />
             </div>
         </div>
     )

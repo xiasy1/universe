@@ -16,7 +16,7 @@ export default function Navbar() {
     };
     let logo_CDNs = [];
     for (let i = 0; i < 10; i++) {
-        logo_CDNs.push(getAWSCDN('logos', `logo${i + 1}`, 'webp'));
+        logo_CDNs.push(getAWSCDN('logos/jpg', `logo${i + 1}`, 'jpg'));
     }
     const [activeImageNum, setActiveImageNum] = useState(0);
     useEffect(() => {

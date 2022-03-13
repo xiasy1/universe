@@ -20,15 +20,16 @@ div.discord-module > img.discord-background02 {
 }
 
 section.discord-text {
-    position    : absolute;
-    z-index     : 11;
-    top         : 3.5rem;
-    width       : 5.5rem;
-    left        : 50%;
-    font-size   : .3rem;
-    font-family : SounsoRare;
-    transform   : translateX(-50%);
-    line-height : 0.3rem;
+    position          : absolute;
+    z-index           : 11;
+    top               : 3.5rem;
+    width             : 5.5rem;
+    left              : 50%;
+    font-size         : .3rem;
+    font-family       : SounsoRare;
+    transform         : translateX(-50%);
+    -webkit-transform : translateX(-50%);
+    line-height       : 0.3rem;
 }
 
 div.discord-module div.discord-icons {
@@ -54,14 +55,15 @@ div.discord-module div.discord-icons {
 }
 
 div.discord-module img.discord-cat {
-    display   : block;
-    position  : absolute;
-    z-index   : 10;
-    top       : 50%;
-    left      : 50%;
-    transform : translate(-50%, -50%);
-    width     : 8.5rem;
-    height    : auto;
+    display           : block;
+    position          : absolute;
+    z-index           : 10;
+    top               : 50%;
+    left              : 50%;
+    -webkit-transform : translate(-50%, -50%);
+    transform         : translate(-50%, -50%);
+    width             : 8.5rem;
+    height            : auto;
 }
 
 div.discord-module div.discord-icons img {
@@ -72,7 +74,7 @@ div.discord-module div.discord-icons img {
     position : absolute;
     top      : 0;
     left     : -1.6rem;
-    z-index  : 15;
+    /*z-index  : 15;*/
 }
 
 .ellipse path {
