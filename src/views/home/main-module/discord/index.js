@@ -22,18 +22,18 @@ export default function Discord() {
             <div className="ellipse">
                 <svg viewBox="0 0 200 50">
                     <path d="M 0,63.5 a 120,67 0 1,1 0,1 z" id="circle" />
-                    <text x="48" style={{'fill': '#fff'}}>
-                        <textPath xlinkHref="#circle" fontSize={3.1} fontFamily={'Mengdong'}>
-                            Cats save the world! Cats drive all the unhappy things away!
-                            Fuck the world! I only love my cat!
+                    <text x="47" style={{'fill': '#fff','text-transform':'uppercase'}}>
+                        <textPath xlinkHref="#circle" fontSize={2.2} fontFamily={'Tarfia'}>
+                            Cats save the world! Cats drive all the unhappy things away! &nbsp;&nbsp;
+                            Fuck the world! I only love my cat!&nbsp;&nbsp;
                             Catddle embraces everything! Everything loves cats!
                             Happiness is a cat!
                         </textPath>
                     </text>
-                    <text x="348" style={{'fill': '#fff'}}>
-                        <textPath xlinkHref="#circle" fontSize={3.1} fontFamily={'Mengdong'}>
-                            Cats save the world! Cats drive all the unhappy things away!
-                            Fuck the world! I only love my cat!
+                    <text x="347" style={{'fill': '#fff','text-transform':'uppercase'}}>
+                        <textPath xlinkHref="#circle" fontSize={2.2} fontFamily={'Tarfia'}>
+                            Cats save the world! Cats drive all the unhappy things away!&nbsp;&nbsp;
+                            Fuck the world! I only love my cat!&nbsp;&nbsp;
                             Catddle embraces everything! Everything loves cats!
                             Happiness is a cat!
                         </textPath>

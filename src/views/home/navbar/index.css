@@ -1,6 +1,6 @@
 div.navbar-nav {
     color           : rgba(0, 0, 0, 0.7);
-    font-family     : vcr;
+    font-family     : Tarfia;
     padding-top     : 1rem;
     display         : flex;
     flex-direction  : column;
@@ -28,7 +28,7 @@ div.navbar-nav-items {
 }
 
 div.navbar-nav-items > span {
-    font-family : vcr;
+    font-family : Tarfia;
     font-weight : bolder;
     padding     : 0 0.1rem;
     cursor      : pointer;
