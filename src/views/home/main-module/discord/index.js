@@ -1,11 +1,9 @@
 import "./style/index.css";
 import getAWSCDN    from "../../../../assets/utils/getAWSCDN.js";
-import useAnimation from "./animation";
 import {useRef}     from "react";
 
 export default function Discord() {
     let discordIconsNodes = useRef(null);
-    // useAnimation(discordIconsNodes);
     return (
         <div id="discord" className="discord-module">
             <img className="discord-background01" src={getAWSCDN("discord-icons", 'background01', 'webp')} alt="" />
@@ -22,7 +20,7 @@ export default function Discord() {
             <div className="ellipse">
                 <svg viewBox="0 0 200 50">
                     <path d="M 0,63.5 a 120,67 0 1,1 0,1 z" id="circle" />
-                    <text x="47" style={{'fill': '#fff','text-transform':'uppercase'}}>
+                    <text x="47" style={{'fill': '#fff','textTransform':'uppercase'}}>
                         <textPath xlinkHref="#circle" fontSize={2.2} fontFamily={'Tarfia'}>
                             Cats save the world! Cats drive all the unhappy things away! &nbsp;&nbsp;
                             Fuck the world! I only love my cat!&nbsp;&nbsp;
@@ -30,7 +28,7 @@ export default function Discord() {
                             Happiness is a cat!
                         </textPath>
                     </text>
-                    <text x="347" style={{'fill': '#fff','text-transform':'uppercase'}}>
+                    <text x="347" style={{'fill': '#fff','textTransform':'uppercase'}}>
                         <textPath xlinkHref="#circle" fontSize={2.2} fontFamily={'Tarfia'}>
                             Cats save the world! Cats drive all the unhappy things away!&nbsp;&nbsp;
                             Fuck the world! I only love my cat!&nbsp;&nbsp;
