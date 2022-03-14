@@ -1,9 +1,16 @@
 import "./style/index.css";
-import getAWSCDN    from "../../../../assets/utils/getAWSCDN.js";
-import {useRef}     from "react";
+import getAWSCDN                     from "../../../../assets/utils/getAWSCDN.js";
+import {useEffect, useRef, useState} from "react";
 
 export default function Discord() {
     let discordIconsNodes = useRef(null);
+    let background_icons = useRef(null);
+    let [isActive, setActive] = useState(false);
+    useEffect(() => {
+        if (background_icons.current.complete) {
+            setActive(true);
+        }
+    },[]);
     return (
         <div id="discord" className="discord-module">
             <img className="discord-background01" src={getAWSCDN("discord-icons", 'background01', 'jpg')} alt="" />
@@ -38,8 +45,8 @@ export default function Discord() {
                     </text>
                 </svg>
             </div>
-            <div className="discord-icons" ref={discordIconsNodes}>
-                <img src={getAWSCDN("discord-icons", "background-icons", "png")} alt="" />
+            <div className={`discord-icons ${isActive ? 'active' : ''}`}  ref={discordIconsNodes}>
+                <img ref={background_icons} src={getAWSCDN("discord-icons", "background-icons", "png")} alt="" />
                 <img src={getAWSCDN("discord-icons", "background-icons", "png")} alt="" />
                 <img src={getAWSCDN("discord-icons", "background-icons", "png")} alt="" />
             </div>

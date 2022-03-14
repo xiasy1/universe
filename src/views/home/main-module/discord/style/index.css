@@ -39,20 +39,19 @@ div.discord-module div.discord-icons {
     top                               : 0;
     left                              : 0;
     border-radius                     : 50%;
+    display                           : flex;
+
+}
+div.discord-module div.discord-icons.active{
     -webkit-animation-name            : move;
     -webkit-animation-duration        : 100s;
     -webkit-animation-iteration-count : infinite;
     -webkit-animation-timing-function : linear;
-    -webkit-animation-delay           : 5s;
     animation-name                    : move;
     animation-duration                : 100s;
     animation-timing-function         : linear;
     animation-iteration-count         : infinite;
-    animation-delay                   : 5s;
-    display                           : flex;
-
 }
-
 @-webkit-keyframes move {
     0% {
         -webkit-transform : translateX(0);
