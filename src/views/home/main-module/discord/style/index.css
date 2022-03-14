@@ -33,15 +33,20 @@ section.discord-text {
 }
 
 div.discord-module div.discord-icons {
-    position          : absolute;
-    height            : 100%;
-    z-index           : 5;
-    top               : 0;
-    left              : 0;
-    border-radius     : 50%;
-    -webkit-animation : move 100s linear infinite;
-    animation         : move 100s linear infinite;
-    display           : flex;
+    position                          : absolute;
+    height                            : 100%;
+    z-index                           : 5;
+    top                               : 0;
+    left                              : 0;
+    border-radius                     : 50%;
+    -webkit-animation-name            : move;
+    -webkit-animation-duration        : 100s;
+    -webkit-animation-iteration-count : infinite;
+    -webkit-animation-timing-function : linear;
+    -webkit-animation-delay           : 1s;
+    /*-webkit-animation : move 100s linear infinite;*/
+    animation                         : move 100s linear infinite;
+    display                           : flex;
 
 }
 
