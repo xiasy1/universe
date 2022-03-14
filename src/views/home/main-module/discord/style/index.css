@@ -46,6 +46,7 @@ div.discord-module div.discord-icons {
     -webkit-animation-delay           : 1s;
     /*-webkit-animation : move 100s linear infinite;*/
     animation                         : move 100s linear infinite;
+    animation-delay                   : 1s;
     display                           : flex;
 
 }
