@@ -43,14 +43,14 @@ div.discord-module div.discord-icons {
     -webkit-animation-duration        : 100s;
     -webkit-animation-iteration-count : infinite;
     -webkit-animation-timing-function : linear;
-    -webkit-animation-delay           : 1s;
+    -webkit-animation-delay           : 5s;
     /*-webkit-animation : move 100s linear infinite;*/
     animation-name                    : move;
     animation-duration                : 100s;
     animation-timing-function         : linear;
     animation-iteration-count         : infinite;
     /*animation                         : move 100s linear infinite;*/
-    animation-delay                   : 1s;
+    animation-delay                   : 5s;
     display                           : flex;
 
 }
