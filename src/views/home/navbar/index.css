@@ -1,7 +1,7 @@
 div.navbar-nav {
+    height          : 7rem;
     color           : rgba(0, 0, 0, 0.7);
     font-family     : Tarfia;
-    padding-top     : 1rem;
     display         : flex;
     flex-direction  : column;
     justify-content : center;

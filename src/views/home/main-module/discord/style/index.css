@@ -35,7 +35,9 @@ section.discord-text {
 div.discord-module div.discord-icons {
     position          : absolute;
     height            : 100%;
+    z-index           : 5;
     top               : 0;
+    left              : 0;
     border-radius     : 50%;
     -webkit-animation : move1 100s linear infinite;
     animation         : move1 100s linear infinite;
@@ -70,11 +72,12 @@ div.discord-module div.discord-icons img {
     height : 100%;
 }
 
+/*环形文字样式*/
 .ellipse {
     position : absolute;
     top      : 0;
     left     : -1.6rem;
-    /*z-index  : 15;*/
+    z-index  : 20;
 }
 
 .ellipse path {
