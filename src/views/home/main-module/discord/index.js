@@ -22,13 +22,10 @@ export default function Discord() {
         }
         setInterval(() => {
             setTopTextX(pre => {
-                return pre <= -480 ? 0 : pre -= 1
+                return pre <= -480 ? 0 : pre -= .2
             });
-        }, 130)
+        }, 100)
     }, []);
-    const test = () => {
-        console.log('test')
-    }
     return (
         <div id="discord" className="discord-module">
             <img className="discord-background01" src={getAWSCDN("discord-icons", 'background01', 'jpg')} alt="" />
