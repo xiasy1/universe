@@ -14,11 +14,6 @@
 }
 
 @font-face {
-    font-family : "MengDong";
-    src         : url("./MengDong.ttf") format("truetype");
-}
-
-@font-face {
     font-family : "SounsoRare";
     src         : url("./SounsoRare.ttf") format("truetype");
 }
@@ -26,4 +21,9 @@
 @font-face {
     font-family : "Tarfia";
     src         : url("./Tarfia.ttf") format("truetype");
+}
+
+@font-face {
+    font-family : "AlNile";
+    src         : url("./AlNile.ttc") format("truetype");
 }
