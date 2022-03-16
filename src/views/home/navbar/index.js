@@ -2,7 +2,7 @@ import "./index.css";
 import getAWSCDN             from "../../../assets/utils/getAWSCDN";
 // import getUniqueKey          from "../../../assets/utils/getUniqueKey";
 // import {useEffect, useState} from "react";
-
+// import eye from "../../launch/eye.ico"
 export default function Navbar() {
     const scrollToAnchor = (anchorName) => {
         if (anchorName) {
@@ -27,7 +27,7 @@ export default function Navbar() {
     //         i++
     //     }, 300);
     // }, []);
-
+const curImg = "https://catddle-frontend-item.s3.ap-southeast-1.amazonaws.com/logos/eye.svg"
     return (
         <div className="navbar-nav">
             <div className="navbar-nav-items">
