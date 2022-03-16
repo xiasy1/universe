@@ -35,9 +35,6 @@ div.navbar-nav-items > span {
 div.navbar-nav-items > span:nth-child(2) {
     color  : #000000;
 }
-div.navbar-nav-items > span:hover {
-    cursor : url("C:\Users\Administrator\Desktop\Web\React\universe\src\views\home\navbar\eye.ico") auto;
-}
 
 div.navbar-nav-items > span:nth-child(2):hover {
     cursor : pointer;
