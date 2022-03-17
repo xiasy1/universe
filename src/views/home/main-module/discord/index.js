@@ -3,7 +3,6 @@ import getAWSCDN                     from "../../../../assets/utils/getAWSCDN.js
 import {useEffect, useRef, useState} from "react";
 import ellipseText                   from "./ellipseText";
 import getUniqueKey                  from "../../../../assets/utils/getUniqueKey";
-import twitterIcon                   from "../../../../assets/icons/twitter.svg"
 
 export default function Discord() {
     let discordIconsNodes = useRef(null);
@@ -32,8 +31,12 @@ export default function Discord() {
             <img className="discord-background02" src={getAWSCDN("discord-icons", 'background02', 'png')} alt="" />
             <img className="discord-cat" src={getAWSCDN("discord-icons", "cat", "png")} alt="" />
             <section className="discord-text">
-                <img src={getAWSCDN("discord-icons", "title", 'jpg')} alt="" />
-                <img src={getAWSCDN("discord-icons", "content", 'jpg')} alt="" />
+                {/*<img src={getAWSCDN("discord-icons", "title", 'jpg')} alt="" />*/}
+                <img src={getAWSCDN("discord-icons", "content", 'png')} alt="" />
+                <a href={links.twitter}>
+                    <img src={getAWSCDN("discord-icons", "twitter", 'png')} alt="" />
+                </a>
+                <img src={getAWSCDN("discord-icons", "twitter-circle", 'png')} alt="" />
             </section>
             <div className="ellipse">
                 <svg viewBox="0 0 200 50">

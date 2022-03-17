@@ -14,11 +14,6 @@ div.launch-module {
     z-index         : 100;
 }
 
-div.launch-module.launch-active {
-    opacity    : 0;
-    transition : opacity 2s ease-in-out;
-}
-
 div.launch-module > img.launch-cat {
     width     : 50vw;
     animation : top2Bottom 2s linear infinite;

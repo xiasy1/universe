@@ -15,7 +15,7 @@ export default function Launch(props) {
         }
     }, []);
     return (
-        <div className={`launch-module ${props.isLoading ? '' : 'launch-active'}`}>
+        <div className={`launch-module`}>
             <img className='launch-cat' src={catImage} alt="" />
             <div className={`launch-verse ${launchStart ? 'animate' : ''}`}>
                 <img ref={verse} src={verseImage} alt="" />

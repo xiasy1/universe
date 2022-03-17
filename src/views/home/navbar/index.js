@@ -2,7 +2,7 @@ import "./index.css";
 import getAWSCDN             from "../../../assets/utils/getAWSCDN";
 // import getUniqueKey          from "../../../assets/utils/getUniqueKey";
 // import {useEffect, useState} from "react";
-// import eye from "../../launch/eye.ico"
+
 export default function Navbar() {
     const scrollToAnchor = (anchorName) => {
         if (anchorName) {
@@ -27,12 +27,15 @@ export default function Navbar() {
     //         i++
     //     }, 300);
     // }, []);
-const curImg = "https://catddle-frontend-item.s3.ap-southeast-1.amazonaws.com/logos/eye.svg"
+    const curImg = "https://catddle-frontend-item.s3.ap-southeast-1.amazonaws.com/logos/eye.svg";
+    const a = {
+        cursor:`url(${curImg})`
+    }
     return (
         <div className="navbar-nav">
             <div className="navbar-nav-items">
                 <span onClick={() => scrollToAnchor("discord")}>DISCORD</span>
-                <span onClick={() => scrollToAnchor("twitter-module")}>TWITTER</span>
+                <a href="https://twitter.com/catddlenft?s=21">TWITTER</a>
                 <span onClick={() => scrollToAnchor("opensea-module")}>OPENSEA</span>
                 <span onClick={() => scrollToAnchor("looks-rare")}>LOOKSRARE</span>
                 <span onClick={() => scrollToAnchor("medium-module")}>MEDIUM</span>
