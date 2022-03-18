@@ -5,7 +5,7 @@ export default function Home(props) {
     return (
         <div className={`home ${props.isLoading ? '' : 'home-active'}`}>
             <Navbar />
-            <MainModule />
+            <MainModule isLoading={props.isLoading}/>
         </div>
     );
 }

@@ -1,9 +1,9 @@
 import Discord from "./discord";
 
-export default function MainModule() {
+export default function MainModule(props) {
     return (
         <main>
-            <Discord />
+            <Discord isLoading={props.isLoading}/>
         </main>
     )
 }

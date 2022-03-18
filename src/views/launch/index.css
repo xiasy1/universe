@@ -15,25 +15,27 @@ div.launch-module {
 }
 
 div.launch-module > img.launch-cat {
-    width     : 50vw;
-    animation : top2Bottom 2s linear infinite;
+    width      : 300px;
+    margin-top : -50px;
+    animation  : top2Bottom 2s linear infinite;
 }
 
 @keyframes top2Bottom {
     0% {
-        transform : translateY(-1rem);
+        transform : translateY(-30px);
     }
     50% {
-        transform : translateY(-.2rem);
+        transform : translateY(-5px);
     }
     100% {
-        transform : translateY(-1rem);
+        transform : translateY(-30px);
     }
 }
 
 div.launch-module > div.launch-verse {
+    margin-top        : -10px;
     position          : absolute;
-    width             : 40vw;
+    width             : 300px;
     left              : 50%;
     top               : 50%;
     -webkit-transform : translate(-50%, -50%) rotate(0);
@@ -68,19 +70,19 @@ div.launch-verse img {
 }
 
 div.launch-verse img.star1 {
-    width             : 1rem;
+    width             : 50px;
     position          : absolute;
-    left              : 3rem;
-    top               : -.7rem;
+    left              : 130px;
+    top               : -30px;
     -webkit-animation : webkit-star-zoom 3s linear infinite;
     animation         : star-zoom 3s linear infinite;
 }
 
 div.launch-verse img.star2 {
-    width             : 1rem;
+    width             : 50px;
     position          : absolute;
-    right             : 3rem;
-    bottom            : -.7rem;
+    right             : 130px;
+    bottom            : -30px;
     -webkit-animation : webkit-star-zoom 3s linear infinite;
     animation         : star-zoom 3s linear infinite;
 }

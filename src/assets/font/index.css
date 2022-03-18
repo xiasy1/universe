@@ -24,6 +24,6 @@
 }
 
 @font-face {
-    font-family : "AlNile";
-    src         : url("./AlNile.ttc") format("truetype");
+    font-family : "DINCondensed";
+    src         : url("./DINCondensed.otf") format("truetype");
 }
