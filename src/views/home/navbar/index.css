@@ -10,6 +10,7 @@ div.navbar-nav {
 
 div.navbar-nav > img.logo {
     width   : 9rem;
+    min-width: 300px;
     height  : auto;
     display : none;
 }

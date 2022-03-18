@@ -110,3 +110,38 @@ div.launch-verse img.star2 {
         transform : scale(1);
     }
 }
+
+@media (max-width : 800px) {
+    div.launch-module > img.launch-cat {
+        width : 100px;
+    }
+
+    div.launch-module > div.launch-verse {
+        width      : 100px;
+        margin-top : -20px;
+    }
+
+    div.launch-verse img.star1 {
+        width : 15px;
+        left  : 50px;
+        top   : -10px;
+    }
+
+    div.launch-verse img.star2 {
+        width  : 15px;
+        right  : 50px;
+        bottom : -10px;
+    }
+
+    @keyframes top2Bottom {
+        0% {
+            transform : translateY(-10px);
+        }
+        50% {
+            transform : translateY(-2px);
+        }
+        100% {
+            transform : translateY(-10px);
+        }
+    }
+}
