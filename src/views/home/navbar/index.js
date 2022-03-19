@@ -1,8 +1,7 @@
 import "./index.css";
 import getAWSCDN  from "../../../assets/utils/getAWSCDN";
-import {useState} from "react";
-// import getUniqueKey          from "../../../assets/utils/getUniqueKey";
-// import {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
+import getUniqueKey          from "../../../assets/utils/getUniqueKey";
 
 export default function Navbar() {
     // const scrollToAnchor = (anchorName) => {
@@ -24,11 +23,24 @@ export default function Navbar() {
         e.preventDefault();
         showSideMenu(true);
     }
+    let logo_CDNs = [];
+    for (let i = 0; i < 10; i++) {
+        logo_CDNs.push(getAWSCDN('navbar/logos', `logo${i + 1}`, 'jpg'));
+    }
+    const [activeImageNum, setActiveImageNum] = useState(0);
+    useEffect(() => {
+        let i = 0;
+        setInterval(() => {
+            if (i > 9) i = 0;
+            setActiveImageNum(i);
+            i++
+        }, 300);
+    }, []);
     return (
         <div className="navbar-nav">
             <div className="navbar-nav-items">
                 <section className="nav-left">
-                    <a href="/">CATTDLE VERSE</a>
+                    <a href="/">CATDDLE VERSE</a>
                 </section>
                 <section className="nav-right">
                     <a className="nav-boat" href="/">
@@ -51,7 +63,15 @@ export default function Navbar() {
                 {/*    <h3>F&Q</h3>*/}
                 {/*</section>*/}
             </div>
-            <img className="logo active" src={getAWSCDN('navbar', `logo`, 'jpg')} alt="" />
+            {/*<img className="logo active" src={getAWSCDN('navbar', `logo`, 'jpg')} alt="" />*/}
+            {
+                logo_CDNs.map((item, index) => {
+                    return (
+                        <img className={`logo ${activeImageNum === index ? 'active' : ''}`}
+                             key={getUniqueKey()} src={item} alt="" />
+                    )
+                })
+            }
         </div>
     )
 }

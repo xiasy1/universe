@@ -40,6 +40,9 @@ export default function Discord(props) {
                 <a href={links.twitter}>
                     <img src={getAWSCDN("discord-icons", "twitter-circle", 'png')} alt="" />
                 </a>
+                <div className="mobile-content">
+                    <img src={getAWSCDN("discord-icons/mobile", "content ", 'png')} alt="" />
+                </div>
             </section>
             <div className="ellipse">
                 <svg viewBox="0 0 200 50">

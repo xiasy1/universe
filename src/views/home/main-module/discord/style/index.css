@@ -208,7 +208,12 @@ div.discord-module div.discord-icons img {
 .mobile-background img.background{
     top: -5rem;
 }
-
+.mobile-content{
+    display: none;
+}
+.mobile-content img{
+    width: 100%;
+}
 @media (max-width: 800px) {
     div.discord-module {
         height      : 23rem;
@@ -231,13 +236,19 @@ div.discord-module div.discord-icons img {
         top: 8rem;
         left: 52%;
     }
-
-    section.discord-text > a {
-        bottom: .2rem;
+    section.discord-text > a,
+    section.discord-text > img{
+        display: none;
     }
-    section.discord-text > a img{
-        width: .8rem;
+    .mobile-content{
+        display: block;
     }
+    /*section.discord-text > a {*/
+    /*    bottom: .2rem;*/
+    /*}*/
+    /*section.discord-text > a img{*/
+    /*    width: .8rem;*/
+    /*}*/
     div.discord-module img.discord-cat{
         width: 14.5rem;
         top: 48%;
