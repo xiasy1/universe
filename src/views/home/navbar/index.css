@@ -37,11 +37,21 @@ div.navbar-nav-items img{
 div.navbar-nav-items a {
     color       : #fff;
     font-size: 3em;
-    margin-right: .5em;
 }
+
 section.nav-left{
     width: 18em;
 }
+
+section.nav-right{
+    width: 25em;
+    text-align: right;
+}
+
+section.nav-right >a {
+    margin-left: .5em;
+}
+
 section.nav-right > a:not(:nth-child(2)){
     cursor  : url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;
 }
