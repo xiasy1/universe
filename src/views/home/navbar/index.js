@@ -20,8 +20,10 @@ export default function Navbar() {
     return (
         <div className="navbar-nav">
             <div className="navbar-nav-items">
-                <a href="/">CATTDLE VERSE</a>
-                <div className="nav-right">
+                <section className="nav-left">
+                    <a href="/">CATTDLE VERSE</a>
+                </section>
+                <section className="nav-right">
                     <a href="/">
                         <img src={boatImage} alt="" />
                     </a>
@@ -31,7 +33,7 @@ export default function Navbar() {
                     <a href="/">
                         <img src={connectImage} alt="" />
                     </a>
-                </div>
+                </section>
                 {/*<span onClick={() => scrollToAnchor("discord")}>DISCORD</span>*/}
                 {/*<a href="https://twitter.com/catddlenft?s=21">TWITTER</a>*/}
                 {/*<span onClick={() => scrollToAnchor("opensea-module")}>OPENSEA</span>*/}
