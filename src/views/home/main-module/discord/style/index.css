@@ -192,3 +192,9 @@ div.discord-module div.discord-icons img {
         transform : rotate(360deg);
     }
 }
+
+@media (max-width: 800px) {
+    .ellipse{
+        display: none;
+    }
+}
