@@ -44,7 +44,7 @@ export default function Discord(props) {
                         <textPath xlinkHref="#circle" fontSize={4} fontFamily={'DINCondensed'}>
                             {ellipseText.map(text => <a key={getUniqueKey(10)}>
                                 {text}
-                                <tspan>&nbsp;I&nbsp;</tspan>
+                                <tspan>&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;</tspan>
                             </a>)}
                         </textPath>
                     </text>

@@ -1,5 +1,6 @@
 div.navbar-nav {
-    height          : 7rem;
+    width           : 100%;
+    height          : 33em;
     color           : rgba(0, 0, 0, 0.7);
     font-family     : DINCondensed;
     display         : flex;
@@ -20,35 +21,42 @@ div.navbar-nav > img.logo.active {
 }
 
 div.navbar-nav-items {
-    /*width         : 4.8rem;*/
-    height        : .5rem;
-    line-height   : .5rem;
-    padding       : 0 .4rem;
-    background    : #ffffff;
+    width         : 100%;
+    height        : 2em;
+    box-sizing    : border-box;
+    line-height   : 2em;
+    padding       : 0 3em;
     border-radius : 4px;
+    display: flex;
+    justify-content: space-between;
 }
 
-div.navbar-nav-items > a {
-    color       : #343a40;
-    font-weight : bolder;
-    padding     : 0 0.1rem;
+div.navbar-nav-items img{
+    height: 100%;
 }
-
-div.navbar-nav-items > span {
-    font-family : DINCondensed;
-    font-weight : bolder;
-    opacity     : .8;
-    padding     : 0 0.1rem;
+div.navbar-nav-items a {
+    color       : #fff;
+    font-size: 3em;
+    margin-right: .5em;
 }
-
-div.navbar-nav-items > span {
-    display : inline-block;
-    height  : .5rem;
+div.nav-right > a:not(:nth-child(2)){
     cursor  : url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;
 }
+/*div.navbar-nav-items > span {*/
+/*    font-family : DINCondensed;*/
+/*    font-weight : bolder;*/
+/*    opacity     : .8;*/
+/*    padding     : 0 0.1rem;*/
+/*}*/
 
-div.navbar-nav-items > span:nth-child(2):hover {
-    cursor : pointer;
-    color  : #000000;
-}
+/*div.navbar-nav-items > span {*/
+/*    display : inline-block;*/
+/*    height  : .5rem;*/
+/*    cursor  : url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;*/
+/*}*/
+
+/*div.navbar-nav-items > span:nth-child(2):hover {*/
+/*    cursor : pointer;*/
+/*    color  : #000000;*/
+/*}*/
 

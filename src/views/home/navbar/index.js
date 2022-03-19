@@ -14,41 +14,31 @@ export default function Navbar() {
             }
         }
     };
-    // let logo_CDNs = [];
-    // for (let i = 0; i < 10; i++) {
-    //     logo_CDNs.push(getAWSCDN('logos/jpg', `logo${i + 1}`, 'jpg'));
-    // }
-    // const [activeImageNum, setActiveImageNum] = useState(0);
-    // useEffect(() => {
-    //     let i = 0;
-    //     setInterval(() => {
-    //         if (i > 9) i = 0;
-    //         setActiveImageNum(i);
-    //         i++
-    //     }, 300);
-    // }, []);
-    const curImg = "https://catddle-frontend-item.s3.ap-southeast-1.amazonaws.com/logos/eye.svg";
-    const a = {
-        cursor:`url(${curImg})`
-    }
+    const boatImage = getAWSCDN('navbar','boat','png');
+    const twitterImage = getAWSCDN('navbar','twitter','png');
+    const connectImage = getAWSCDN('navbar','connect ','png');
     return (
         <div className="navbar-nav">
             <div className="navbar-nav-items">
-                <span onClick={() => scrollToAnchor("discord")}>DISCORD</span>
-                <a href="https://twitter.com/catddlenft?s=21">TWITTER</a>
-                <span onClick={() => scrollToAnchor("opensea-module")}>OPENSEA</span>
-                <span onClick={() => scrollToAnchor("looks-rare")}>LOOKSRARE</span>
-                <span onClick={() => scrollToAnchor("medium-module")}>MEDIUM</span>
+                <a href="/">CATTDLE VERSE</a>
+                <div className="nav-right">
+                    <a href="/">
+                        <img src={boatImage} alt="" />
+                    </a>
+                    <a href="https://twitter.com/catddlenft" title="twitter">
+                        <img src={twitterImage} alt="" />
+                    </a>
+                    <a href="/">
+                        <img src={connectImage} alt="" />
+                    </a>
+                </div>
+                {/*<span onClick={() => scrollToAnchor("discord")}>DISCORD</span>*/}
+                {/*<a href="https://twitter.com/catddlenft?s=21">TWITTER</a>*/}
+                {/*<span onClick={() => scrollToAnchor("opensea-module")}>OPENSEA</span>*/}
+                {/*<span onClick={() => scrollToAnchor("looks-rare")}>LOOKSRARE</span>*/}
+                {/*<span onClick={() => scrollToAnchor("medium-module")}>MEDIUM</span>*/}
             </div>
-            <img className="logo active" src={getAWSCDN('logos/jpg', `logo10`, 'jpg')} alt="" />
-            {/*{*/}
-            {/*    logo_CDNs.map((item, index) => {*/}
-            {/*        return (*/}
-            {/*            <img className={`logo ${activeImageNum === index ? 'active' : ''}`}*/}
-            {/*                 key={getUniqueKey()} src={item} alt="" />*/}
-            {/*        )*/}
-            {/*    })*/}
-            {/*}*/}
+            <img className="logo active" src={getAWSCDN('navbar', `logo`, 'jpg')} alt="" />
         </div>
     )
 }
