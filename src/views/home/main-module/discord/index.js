@@ -31,6 +31,10 @@ export default function Discord(props) {
             <img className="discord-background01" src={getAWSCDN("discord-icons", 'background', 'png')} alt="" />
             <img className="discord-background02" src={getAWSCDN("discord-icons", 'background02', 'png')} alt="" />
             <img className="discord-cat" src={getAWSCDN("discord-icons", "cat", "png")} alt="" />
+            <div className="mobile-background">
+                <img className="background" src={getAWSCDN("discord-icons/mobile", "background", "png")} alt="" />
+                <img className="background-black" src={getAWSCDN("discord-icons/mobile", "background-black", "png")} alt="" />
+            </div>
             <section className="discord-text">
                 <img src={getAWSCDN("discord-icons", "content", 'png')} alt="" />
                 <a href={links.twitter}>
