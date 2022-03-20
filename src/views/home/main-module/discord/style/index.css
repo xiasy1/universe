@@ -193,69 +193,82 @@ div.discord-module div.discord-icons img {
     }
 }
 
-.mobile-background{
-    position: relative;
-    display: none;
+.mobile-background {
+    position : relative;
+    display  : none;
 }
-.mobile-background img{
-    width: 100%;
+
+.mobile-background img {
+    width    : 100%;
     position : absolute;
 }
-.mobile-background img.background-black{
-    top: -9.5rem;
-    z-index: 10;
+
+.mobile-background img.background-black {
+    top     : -9.5rem;
+    z-index : 10;
 }
-.mobile-background img.background{
-    top: -5rem;
+
+.mobile-background img.background {
+    top : -5rem;
 }
-.mobile-content{
-    display: none;
+
+.mobile-content {
+    display : none;
 }
-.mobile-content img{
-    width: 100%;
+
+.mobile-content img {
+    width : 100%;
 }
-@media (max-width: 800px) {
+
+@media (max-width : 800px) {
     div.discord-module {
-        height      : 23rem;
+        height : 23rem;
     }
 
-    .mobile-background{
-        display: block;
+    .mobile-background {
+        display : block;
     }
-    .ellipse{
-        display: none;
+
+    .ellipse {
+        display : none;
     }
-    .discord-background01{
-        display: none;
+
+    .discord-background01 {
+        display : none;
     }
-    .discord-background02{
-        display: none;
+
+    .discord-background02 {
+        display : none;
     }
-    section.discord-text{
-        width: 11rem;
-        top: 8rem;
-        left: 52%;
+
+    section.discord-text {
+        width : 11rem;
+        top   : 8rem;
+        left  : 52%;
     }
+
     section.discord-text > a,
-    section.discord-text > img{
-        display: none;
+    section.discord-text > img {
+        display : none;
     }
-    .mobile-content{
-        display: block;
+
+    .mobile-content {
+        display : block;
     }
+
     /*section.discord-text > a {*/
     /*    bottom: .2rem;*/
     /*}*/
     /*section.discord-text > a img{*/
     /*    width: .8rem;*/
     /*}*/
-    div.discord-module img.discord-cat{
-        width: 14.5rem;
-        top: 48%;
+    div.discord-module img.discord-cat {
+        width : 14.5rem;
+        top   : 48%;
     }
 
-    div.discord-module div.discord-icons{
-        height: 110%;
-        top: -1rem;
+    div.discord-module div.discord-icons {
+        height : 110%;
+        top    : -1rem;
     }
 }
