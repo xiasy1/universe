@@ -25,10 +25,22 @@ div.launch-module > img.launch-cat {
         transform : translateY(-30px);
     }
     50% {
-        transform : translateY(-5px);
+        transform : translateY(10px);
     }
     100% {
         transform : translateY(-30px);
+    }
+}
+
+@-webkit-keyframes top2Bottom {
+    0% {
+        -webkit-transform : translateY(-30px);
+    }
+    50% {
+        -webkit-transform : translateY(10px);
+    }
+    100% {
+        -webkit-transform : translateY(-30px);
     }
 }
 
@@ -73,7 +85,7 @@ div.launch-verse img.star1 {
     width             : 50px;
     position          : absolute;
     left              : 130px;
-    top               : -30px;
+    top               : -10px;
     -webkit-animation : webkit-star-zoom 3s linear infinite;
     animation         : star-zoom 3s linear infinite;
 }
@@ -82,7 +94,7 @@ div.launch-verse img.star2 {
     width             : 50px;
     position          : absolute;
     right             : 130px;
-    bottom            : -30px;
+    bottom            : -10px;
     -webkit-animation : webkit-star-zoom 3s linear infinite;
     animation         : star-zoom 3s linear infinite;
 }
@@ -113,35 +125,47 @@ div.launch-verse img.star2 {
 
 @media (max-width : 800px) {
     div.launch-module > img.launch-cat {
-        width : 100px;
+        width : 180px;
     }
 
     div.launch-module > div.launch-verse {
-        width      : 100px;
+        width      : 170px;
         margin-top : -20px;
     }
 
     div.launch-verse img.star1 {
-        width : 15px;
-        left  : 50px;
-        top   : -10px;
+        width : 20px;
+        left  : 90px;
+        top   : 0;
     }
 
     div.launch-verse img.star2 {
-        width  : 15px;
-        right  : 50px;
-        bottom : -10px;
+        width  : 20px;
+        right  : 90px;
+        bottom : 0;
     }
 
     @keyframes top2Bottom {
         0% {
-            transform : translateY(-10px);
+            transform : translateY(-15px);
         }
         50% {
             transform : translateY(-2px);
         }
         100% {
-            transform : translateY(-10px);
+            transform : translateY(-15px);
+        }
+    }
+
+    @-webkit-keyframes top2Bottom {
+        0% {
+            -webkit-transform : translateY(-15px);
+        }
+        50% {
+            -webkit-transform : translateY(-2px);
+        }
+        100% {
+            -webkit-transform : translateY(-15px);
         }
     }
 }

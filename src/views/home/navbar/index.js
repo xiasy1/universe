@@ -4,21 +4,12 @@ import {useEffect, useState} from "react";
 import getUniqueKey          from "../../../assets/utils/getUniqueKey";
 
 export default function Navbar() {
-    // const scrollToAnchor = (anchorName) => {
-    //     if (anchorName) {
-    //         let anchorElement = document.getElementById(anchorName);
-    //         if (anchorElement) {
-    //             anchorElement.scrollIntoView({
-    //                 behavior: "smooth"
-    //             });
-    //         }
-    //     }
-    // };
     const boatImage = getAWSCDN('navbar','boat','png');
     const twitterImage = getAWSCDN('navbar','twitter','png');
     const connectImage = getAWSCDN('navbar','connect ','png');
     const menuImage = getAWSCDN('navbar','menu','png');
-    const [isMenuShow, showSideMenu] = useState(false)
+    const [isMenuShow, showSideMenu] = useState(false);
+    const clientWidth = document.documentElement.clientWidth;
     const openSideMenu = e => {
         e.preventDefault();
         showSideMenu(true);
@@ -63,15 +54,17 @@ export default function Navbar() {
                 {/*    <h3>F&Q</h3>*/}
                 {/*</section>*/}
             </div>
-            {/*<img className="logo active" src={getAWSCDN('navbar', `logo`, 'jpg')} alt="" />*/}
-            {
-                logo_CDNs.map((item, index) => {
-                    return (
-                        <img className={`logo ${activeImageNum === index ? 'active' : ''}`}
-                             key={getUniqueKey()} src={item} alt="" />
-                    )
-                })
-            }
+            <div className="navbar-logos">
+                {clientWidth <= 800 && <img className="logo active" src={getAWSCDN('navbar', `logo`, 'jpg')} alt="" />}
+                {
+                    clientWidth >=800 && logo_CDNs.map((item, index) => {
+                        return (
+                            <img className={`logo ${activeImageNum === index ? 'active' : ''}`}
+                                 key={getUniqueKey()} src={item} alt="" />
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
